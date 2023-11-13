@@ -1,0 +1,33 @@
+header{
+    position: relative;
+}
+.shopping-mall {
+    position: absolute;
+    bottom: 20px; left: 10px;
+    font-variant: small-caps;
+}
+.shopping-mall>h1{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 50px;
+    color: white;
+    letter-spacing: 0.3px;
+    text-shadow: 2px 2px 2px black;
+    border-bottom: 1px dotted grey;
+    padding-bottom: 0;
+    margin: 0;
+}
+.shopping-mall{
+    margin-top: 5px;
+    letter-spacing: 0.5px;
+}
+li:hover{
+    background-color: rgba(0, 113, 139, 0.395);
+    color: white;
+}
+.text-color{
+    color: black;
+}
+a:hover{
+    color: white;
+    text-decoration: none;
+}

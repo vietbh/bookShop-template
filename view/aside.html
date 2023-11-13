@@ -1,0 +1,7 @@
+<ul class="list-group m-0">
+    <li class="list-group-item " ng-repeat="mh in cacmonhoc| limitTo: 18:0 |orderBy:'Name'">
+        <a href="#!tracnghiem/{{mh.Id}}/{{mh.Name}}" class="text-dark" id="monHoc">
+            {{mh.Name|uppercase}}
+        </a>
+    </li>
+</ul>

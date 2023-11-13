@@ -1,0 +1,47 @@
+<nav class="row navbar navbar-expand-lg w-110">
+    <div class="collapse navbar-collapse d-flex justify-content-start" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item active ">
+                <a class="nav-link text-white" href="#!home"><i class="fa fa-home" aria-hidden="true"></i>
+                    Trang chủ<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item ">
+                <a class="nav-link text-white" href="#!thơ hay"><i class="fa fa-info-circle" aria-hidden="true"></i>
+                    Thơ hay<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link text-white" href="#!lienhe"><i class="fa fa-phone" aria-hidden="true"></i>
+                    Liên hệ<span class="sr-only">(current)</span></a>
+            </li>
+    </div>
+    <!--  -->
+    <div class="d-flex justify-content-end" >
+        <li class="nav-item dropdown d-flex mr-4" ng-hide="hoten" >
+            <div ng-hide="tc" class="nav-link dropdown-toggle text-white ft-right" href="#" id="navbarDropdown"
+                role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <i class="fa fa-user-circle-o" aria-hidden="true"></i>
+                Tài khoản
+            </div>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#!dangnhap">Đăng nhập</a>
+                <a class="dropdown-item" href="#!quenmatkhau">Quên mật khẩu</a>
+                <a class="dropdown-item" href="#!dangki">Đăng kí thành viên</a>
+                <div class="dropdown-divider"></div>
+            </div>
+        </li>
+        <li class="nav-item dropdown d-flex mr-4" ng-show="hoten" >
+            <div ng-hide="tc" class="nav-link dropdown-toggle text-white ft-right" href="#" id="navbarDropdown"
+                role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <i class="fa fa-user-circle-o" aria-hidden="true"></i>
+                {{hoten}}
+            </div>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <button type="button" ng-click="logout()" class="dropdown-item">Đăng xuất</button>
+                <a class="dropdown-item" href="#!doimatkhau">Đổi mật khẩu</a>
+                <a class="dropdown-item" href="#">Cập nhật hồ sơ</a>
+                <div class="dropdown-divider"></div>
+            </div>
+        </li>
+    </div>
+    </ul>
+</nav>

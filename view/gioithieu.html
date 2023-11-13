@@ -1,0 +1,11 @@
+<div class="list-group">
+    <a href="#" class="list-group-item list-group-item-action flex-column align-items-start"
+    ng-repeat="t in listtin | limitTo: 6:0">
+      <div class="d-flex w-100 justify-content-between">
+        <h5 class="mb-1"> {{t.TieuDe}}</h5>
+        <small class="text-muted">{{t.Ngay|date:'dd/MM.yyyy'}}</small>
+      </div>
+      <p class="mb-1">{{t.TomTat}}</p>
+      <small class="text-muted"> Xem chi tiết.</small>
+    </a>
+  </div>

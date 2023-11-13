@@ -1,0 +1,17 @@
+<div class="card-columns p-1" >
+    <div class="card mt-2 text-center " ng-repeat="mh in cacmonhoc |limitTo: pageSize:start">
+        <img src="/images/logos/{{mh.Logo}}" height="" class="card-img-top w-75  mt-2" alt="...">
+        <div class="card-body">
+            <h6 class="card-title m-0 ">Khóa học 
+               </br> {{mh.Name}}</h5>
+            <p class="card-text font-weight-bold text-danger">Thầy Long</p>
+        </div>
+        <a href="#!tracnghiem/{{mh.Id}}/{{mh.Name}}" class="btn btn-control bg-dark text-white w-100 py-3 card-footer font-weight-bold">
+            Đăng kí
+        </a>
+    </div>
+</div> 
+<div class="d-flex justify-content-center mx-1">
+    <button type="button" ng-click="back()" class="btn bg-primary text-light float-right px-3 mt-3">Quay lại</button>
+    <button type="button" ng-click="next()" class="btn bg-primary text-light float-right mx-3 mt-3">Xem tiếp</button>
+</div>
